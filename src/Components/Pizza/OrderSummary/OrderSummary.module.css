@@ -1,0 +1,35 @@
+.OrderSummary {
+  width: 100%;
+  font-family: "Solway", serif;
+  font-size: 1.1rem;
+}
+
+.Input {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 15px auto;
+  font-size: 1.3rem;
+  border: 2px solid purple;
+  border-radius: 3px;
+  font-family: "Solway", serif;
+}
+
+.Checkout {
+  text-align: center;
+  display: flex;
+  justify-self: start;
+}
+
+.ContinueCheckout {
+  margin: 29px 0;
+}
+
+.Total {
+  margin-top: 10px;
+}
+
+@media (max-width: 450px) {
+  .Checkout {
+    display: block;
+  }
+} ;

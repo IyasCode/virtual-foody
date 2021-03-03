@@ -1,0 +1,108 @@
+.SignUpForm {
+  width: 88vw;
+  height: 100%;
+  margin: auto 8vw;
+  overflow: hidden;
+}
+
+.SignUpText {
+  font-family: "Mali", cursive;
+  animation-name: slide;
+  animation-duration: 0.3s;
+}
+
+.Email,
+.Name,
+.Password,
+.Confirm {
+  width: 98%;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.Open {
+  transform: translateX(-120%);
+  transition: transform 0.3s ease-out;
+}
+
+.Close {
+  transform: translateX(-6%);
+  transition: transform 0.3s ease-in;
+}
+
+.ButtonHolder {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+}
+
+.NextButton {
+  width: 100px;
+  height: 30px;
+  margin: 16px 0;
+  font-family: "Mali", cursive;
+  font-weight: 600;
+  color: #592d66;
+  background-color: white;
+  border: 4px solid #592d66;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.NextButton:hover {
+  color: #f0d2f7;
+  background-color: #592d66;
+}
+
+.SignInButton {
+  width: 150px;
+  height: 23px;
+  margin: 16px 0;
+  font-family: "Mali", cursive;
+  font-weight: 600;
+  color: #592d66;
+  background-color: white;
+  border: 4px solid #592d66;
+  border-radius: 5px;
+  outline: none;
+  text-decoration-line: none;
+}
+
+.SignInButton:hover {
+  color: #f0d2f7;
+  background-color: #592d66;
+}
+
+@media (min-width: 600px) {
+  .SignUpForm {
+    width: 420px;
+    margin: auto 40px;
+  }
+
+  .Open {
+    transform: translateX(-130%);
+  }
+
+  .Close {
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .NextButton,
+  .SignInButton {
+    margin: 75px 0 0 0;
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-150px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

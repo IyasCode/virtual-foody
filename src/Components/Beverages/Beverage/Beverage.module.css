@@ -1,0 +1,83 @@
+.Beverage {
+  width: 200px;
+  height: 280px;
+  margin: 5px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  font-family: "Solway", serif;
+  cursor: pointer;
+  transition: all 0.2s;
+  animation-name: mobileSlide;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  position: relative;
+  background-color: white;
+}
+
+.Beverage:hover .Beverage_Image {
+  transform: scale(1.2);
+}
+
+.CoverButton {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.Beverage_Image {
+  width: 100%;
+  height: 64%;
+  transition-duration: 500ms;
+}
+
+.Beverage_Name {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.Button {
+  width: 90%;
+  height: 15%;
+  margin: auto;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(216, 170, 216);
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+@media (max-width: 437px) {
+  .Beverage {
+    width: 46%;
+    height: 30%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Beverage {
+    animation-name: desktopSlide;
+  }
+}
+
+@keyframes desktopSlide {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes mobileSlide {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

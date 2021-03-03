@@ -1,0 +1,60 @@
+.CreditCards {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.CardNumber,
+.Name,
+.Expiry,
+.Cvc {
+  margin: 3px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 40px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.CardNumber {
+  margin-top: 30px;
+}
+
+.CardNumber,
+.Name {
+  width: 70%;
+}
+
+.Expiry {
+  width: 70%;
+}
+
+.Cvc {
+  width: 30%;
+}
+
+.LastRow_Input {
+  width: 72.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CheckoutButton {
+  width: 40%;
+  height: 50px;
+  margin-top: 40px;
+  background-color: rgb(91, 211, 91);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: cursive;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.CheckoutButton:hover {
+  background-color: green;
+}

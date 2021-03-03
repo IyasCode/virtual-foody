@@ -1,0 +1,31 @@
+.RecipeInput {
+  width: 100%;
+  text-align: center;
+}
+
+.Title {
+  margin: 0;
+  padding: 15px;
+}
+
+.Recipe,
+.Author {
+  width: 80%;
+  height: 30px;
+  margin: 5px 0;
+}
+
+.AddButton {
+  width: 20%;
+  height: 45px;
+  margin: 15px 0;
+}
+
+@media (min-width: 600px) {
+  .RecipeInput {
+    width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
+  }
+}

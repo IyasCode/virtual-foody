@@ -1,0 +1,94 @@
+.MenuOutput {
+  margin: 10px;
+  width: 250px;
+  height: 280px;
+  box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  font-family: "Press Start 2P", cursive;
+  background-color: rgb(255, 255, 255);
+  /* background: linear-gradient(
+    0deg,
+    rgb(230, 230, 230) 0%,
+    rgba(230, 230, 230) 92%,
+    rgb(255, 255, 255) 100%
+  ); */
+  transition: all 0.2s;
+  animation-name: bounce;
+  animation-duration: 0.4s;
+}
+
+.MenuOutput:hover {
+  transform: scale(1.1);
+}
+
+.Beverage_MenuImage {
+  width: 65%;
+  margin: auto;
+}
+
+.Beverage_MenuType {
+  width: 100%;
+  padding: 20px 0;
+  margin: 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  background: rgb(93, 54, 152);
+  color: white;
+}
+
+.Burger_MenuImage {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.Burger_MenuType {
+  width: 100%;
+  padding: 20px 0;
+  margin: 10px auto 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  background: rgb(93, 54, 152);
+  color: white;
+}
+
+.Pizza_MenuImage {
+  width: 80%;
+  margin: auto;
+}
+
+.Pizza_MenuType {
+  width: 100%;
+  padding: 20px 0;
+  margin: 5px auto 0 auto;
+  text-align: center;
+  vertical-align: middle;
+  background: rgb(93, 54, 152);
+  color: white;
+}
+
+.Link {
+  text-decoration: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  20% {
+    transform: scale(1.05);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

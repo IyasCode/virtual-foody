@@ -1,0 +1,94 @@
+.CheckoutSummary {
+  width: 100%;
+  max-width: 1050px;
+  height: 570px;
+  margin: auto;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.TotalList {
+  width: 100%;
+}
+
+.CreditCards {
+  width: 100%;
+}
+
+@media (max-width: 750px) {
+  .CheckoutSummary {
+    flex-direction: column;
+    margin-top: 60px;
+    height: fit-content;
+  }
+
+  .TotalList {
+    padding-top: 30px;
+  }
+
+  .TotalList,
+  .CreditCards {
+    margin-bottom: 50px;
+    animation: slideTop 0.5s;
+  }
+}
+
+.PromoSpinButton {
+  width: 90px;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  z-index: 100;
+  cursor: pointer;
+  animation: promoSpinButton 0.5s infinite;
+}
+
+@media (min-width: 1000px) {
+  .CheckoutSummary {
+    border-radius: 10px;
+    box-shadow: 3px 3px 9px rgba(0, 0, 0, 0.5);
+
+    animation-name: slideSide;
+    animation-duration: 0.5s;
+  }
+
+  .PromoSpinButton {
+    position: absolute;
+    top: -2%;
+    right: -2%;
+    transition: all 0.5s;
+  }
+}
+
+@keyframes slideSide {
+  0% {
+    transform: translateX(200px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideTop {
+  0% {
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes promoSpinButton {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

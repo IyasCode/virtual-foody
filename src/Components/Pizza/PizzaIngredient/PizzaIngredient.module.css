@@ -1,0 +1,104 @@
+.PlainPizza {
+  width: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  z-index: 1;
+}
+
+.CheezySauce {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  z-index: 2;
+}
+
+.TomatoSauce {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  z-index: 2;
+}
+
+.MushroomSauce {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  z-index: 2;
+}
+
+.DoubleLayerCrust {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 1/-1;
+  z-index: 0;
+}
+
+.Pepperoni {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  z-index: 3;
+}
+
+.Prawn {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  z-index: 6;
+}
+
+.Fish {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  z-index: 7;
+}
+
+.Mushroom {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  z-index: 7;
+}
+
+.Pineapple {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  z-index: 5;
+}
+
+.Tomato {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  z-index: 4;
+}
+
+.Onion {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  z-index: 8;
+}
+
+.Pepper {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  z-index: 9;
+}
+
+.Mint {
+  width: 100%;
+  grid-row: 2/-1;
+  grid-column: 2/-2;
+  z-index: 10;
+}
+
+.CheeseSprinkle {
+  width: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  z-index: 11;
+}

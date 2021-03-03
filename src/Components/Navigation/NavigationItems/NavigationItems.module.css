@@ -1,0 +1,103 @@
+.NavigationItems {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 80%;
+  flex-flow: column-reverse;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.UserBox {
+  margin-top: 30px;
+  padding: 2px;
+  box-sizing: border-box;
+  font-family: "Mali", cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.UserBox:hover .ProfileButton,
+.UserBox:hover .LogOutButton {
+  display: block;
+}
+
+.ProfileButton,
+.LogOutButton {
+  padding-left: 0;
+}
+
+.UserText {
+  display: none;
+  width: 82px;
+  padding: 10px 0 17px 0;
+  margin: 0;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
+
+.UserTextActive {
+  display: block;
+  width: 82px;
+  padding: 10px 0 17px 0;
+  margin: 0 0 10px 0;
+  text-align: center;
+  color: white;
+  background: linear-gradient(
+    0deg,
+    rgb(62, 29, 110) 0%,
+    rgba(62, 29, 110) 50%,
+    rgba(62, 29, 110) 70%,
+    rgba(161, 140, 192, 1) 100%
+  );
+  border-bottom: 4px solid #dfcefc;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+@media (min-width: 500px) {
+  .NavigationItems {
+    flex-flow: row;
+  }
+
+  .UserBox {
+    margin-top: 10px;
+  }
+
+  .UserBox:hover {
+    margin-top: 123px;
+    background-color: rgb(160, 122, 196);
+    background: linear-gradient(
+      0deg,
+      rgb(121, 101, 155) 0%,
+      rgb(121, 101, 155) 50%,
+      rgba(121, 101, 155) 93%,
+      rgba(161, 140, 192, 1) 100%
+    );
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .UserText {
+    display: block;
+    padding: 15px 0 17px 0;
+  }
+
+  .UserTextActive {
+    display: block;
+    padding: 15px 0 8px 0;
+  }
+
+  .ProfileButton,
+  .LogOutButton {
+    display: none;
+  }
+}

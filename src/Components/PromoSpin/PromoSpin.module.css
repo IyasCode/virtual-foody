@@ -1,0 +1,173 @@
+.PromoSpin {
+  width: 100%;
+  max-width: 300px;
+  height: fit-content;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.PromoSpinImg {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 5fr 2fr 5fr;
+  grid-template-rows: 3fr 3fr 4fr;
+}
+
+.WheelImg {
+  width: 100%;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  transition: all 6s;
+  transition-timing-function: cubic-bezier(0.86, 0, 0.07, 1);
+  transform: rotateZ(0deg);
+}
+
+.ArrowImg {
+  width: 100%;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  z-index: 1;
+}
+
+.SpinButton {
+  width: 60%;
+  height: 50px;
+  margin-top: 25px;
+  background-color: red;
+  color: white;
+  border: 3px solid rgb(92, 43, 43);
+  border-radius: 15px;
+  font-size: 2rem;
+  font-family: cursive;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.3s;
+  outline-style: none;
+}
+
+.SpinButton:active {
+  transform: scale(1.1);
+}
+
+.FinishScreen {
+  width: 140%;
+  height: 102%;
+  position: absolute;
+  top: -1%;
+  left: -20%;
+  background-color: white;
+  z-index: 3;
+  animation-name: finishEntrance;
+  animation-duration: 1s;
+  font-family: "Mali", cursive;
+}
+
+.FinishScreen_Won h2 {
+  font-size: 2.4rem;
+}
+
+.FinishScreen_Won h3 {
+  width: fit-content;
+  margin: 0;
+  padding: 5px;
+  border-radius: 3px;
+  font-size: 1.5rem;
+  background-color: rgb(218, 218, 218);
+}
+
+.FinishScreen_Won h4 {
+  font-size: 2rem;
+}
+
+.FinishScreen_Won_IdBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CopyButton {
+  width: 20px;
+  display: inline-block;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 140px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.FinishScreen_Lost h2 {
+  font-size: 2.4rem;
+}
+
+.FinishScreen_Lost button {
+  margin-top: 50px;
+  width: 30%;
+  height: 40px;
+  font-size: 1.2rem;
+  font-family: cursive;
+  font-weight: bolder;
+  background-color: white;
+  color: red;
+  border: 5px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.FinishScreen_Lost button:hover {
+  color: white;
+  background-color: red;
+}
+
+@media (max-width: 600px) {
+  .FinishScreen {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@keyframes finishEntrance {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

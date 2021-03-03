@@ -1,0 +1,157 @@
+.Toolbar {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgb(161, 140, 192);
+  background: linear-gradient(
+    0deg,
+    rgba(161, 140, 192, 1) 0%,
+    rgba(93, 54, 152, 1) 10%,
+    rgba(93, 54, 152, 1) 50%,
+    rgba(93, 54, 152, 1) 80%,
+    rgba(161, 140, 192, 1) 100%
+  );
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 200;
+}
+
+.Toolbar nav {
+  height: 100%;
+}
+
+.LogoBox {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  font-family: "Solway", serif;
+  color: white;
+}
+
+.Logo {
+  height: 100%;
+  width: 32%;
+  margin-right: 10px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.LogoRotate {
+  animation-name: logoRotate;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  width: 10%;
+  height: 50%;
+}
+
+.BackArrow {
+  display: none;
+  cursor: pointer;
+}
+
+.BackArrowRotate {
+  animation-name: backRotate;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.LogoText {
+  font-size: 1rem;
+}
+
+.rotate {
+  transform: rotateX(90deg);
+}
+
+@media (max-width: 499px) {
+  .DesktopOnly {
+    display: none;
+  }
+
+  .Logo {
+    width: 100%;
+  }
+
+  .LogoText {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .Toolbar {
+    width: 1000px;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  }
+
+  .LogoBox {
+    height: 130%;
+    margin-left: 50px;
+  }
+
+  .Logo {
+    height: 100%;
+    width: 20%;
+    margin: 0 10px;
+  }
+
+  .BackArrow {
+    width: 8.6%;
+    position: absolute;
+    top: -23%;
+    left: 7.61%;
+    z-index: -1;
+    transition: all 0.3s;
+    display: block;
+  }
+
+  .BackArrow_Image {
+    width: 100%;
+    height: 100%;
+  }
+
+  .BackArrowRotate:hover {
+    transform: scale(1.1);
+  }
+
+  .LogoText {
+    font-size: 2rem;
+    width: 300px;
+  }
+}
+
+@media (min-width: 500px) {
+  .MobileOnly {
+    display: none;
+  }
+}
+
+@keyframes backRotate {
+  0% {
+    transform: rotateY(0deg);
+    z-index: -2;
+  }
+  100% {
+    transform: rotateY(180deg);
+    z-index: 1;
+  }
+}
+
+@keyframes logoRotate {
+  0% {
+    transform: rotateY(0deg);
+    z-index: 1;
+  }
+  100% {
+    transform: rotateY(180deg);
+    z-index: -1;
+  }
+}

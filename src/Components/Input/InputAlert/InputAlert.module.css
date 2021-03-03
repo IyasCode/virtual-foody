@@ -1,0 +1,19 @@
+.InputAlert {
+  height: 20px;
+  font-size: 12px;
+  font-weight: 100;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: rgb(255, 0, 0);
+  visibility: hidden;
+}
+
+.AlertLogo {
+  width: 12px;
+  margin-right: 10px;
+}
+
+.AlertText {
+  font-weight: 600;
+}

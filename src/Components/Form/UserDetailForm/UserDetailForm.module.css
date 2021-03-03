@@ -1,0 +1,112 @@
+.UserDetailForm {
+  width: 90vw;
+  margin: 10px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.AddressLabel,
+.PostalLabel,
+.PhoneLabel,
+.CityLabel {
+  font-weight: 600;
+}
+
+.AddressInput {
+  height: 90px;
+  width: 100%;
+  font-size: 1.4rem;
+  border: 1px solid black;
+}
+
+.CityInput,
+.PostalInput,
+.PhoneInput {
+  height: 25px;
+}
+
+.CityInput {
+  border: 1px solid black;
+}
+
+.PostalInput {
+  border: 1px solid black;
+}
+
+.PhoneInput {
+  border: 1px solid black;
+}
+
+.TwoInputHolder {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.InputHolder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ButtonHolder {
+  width: 100%;
+  margin: 15px 0 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Button {
+  width: 100px;
+  height: 30px;
+  font-family: "Mali", cursive;
+  font-weight: 600;
+  color: #592d66;
+  background-color: white;
+  border: 4px solid #592d66;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.Button:hover {
+  color: #f0d2f7;
+  background-color: #592d66;
+}
+
+.Open {
+  transform: translateX(0%);
+  transition: transform 0.3s ease-out;
+}
+
+.Close {
+  transform: translateX(-113%);
+  transition: transform 0.3s ease-out;
+}
+
+@media (min-width: 600px) {
+  .UserDetailForm {
+    width: 420px;
+  }
+
+  .Open {
+    transform: translateX(50%);
+  }
+
+  .Close {
+    transform: translateX(-110%);
+  }
+}
+
+@media (max-width: 500px) {
+  .TwoInputHolder {
+    flex-direction: column;
+  }
+
+  .CityInput,
+  .PostalInput,
+  .PhoneInput {
+    width: 100%;
+  }
+}

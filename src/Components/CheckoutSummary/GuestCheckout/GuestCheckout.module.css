@@ -1,0 +1,22 @@
+.GuestCheckout {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  text-align: center;
+  font-family: cursive;
+}
+
+.ButtonBox {
+  margin-top: 40px;
+}
+
+.Button {
+  display: inline;
+  margin: 0 40px;
+}
+
+@media (max-width: 560px) {
+  .GuestCheckout {
+    height: 250px;
+  }
+}

@@ -1,0 +1,45 @@
+.SignInForm {
+  width: 100%;
+  height: 100%;
+  font-family: "Mali", cursive;
+  overflow: hidden;
+}
+
+.SignIn_Text {
+  animation-name: slide;
+  animation-duration: 0.3s;
+}
+
+.Email,
+.Password {
+  margin-bottom: 10px;
+  width: 80%;
+  height: 30px;
+}
+
+.Link {
+  text-decoration: none;
+}
+
+.ButtonBox {
+  width: 80%;
+  margin: 0 auto 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.SignInButton {
+  width: 80px;
+  height: 24px;
+  cursor: pointer;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateY(-150px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

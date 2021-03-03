@@ -1,0 +1,56 @@
+.NavigationItem {
+  margin: 10px 0;
+  box-sizing: border-box;
+  display: block;
+  height: 100%;
+  font-family: "Mali", cursive;
+}
+
+.NavigationItem a {
+  color: #212b4d;
+  text-decoration: none;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+  border-bottom: 4px solid #212b4d;
+  color: #40a4c8;
+}
+
+@media (min-width: 500px) {
+  .NavigationItem {
+    margin: 0;
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  .NavigationItem a {
+    color: white;
+    height: 100%;
+    padding: 16px 10px;
+    border-bottom: 4px solid transparent;
+  }
+
+  .NavigationItem a:hover,
+  .NavigationItem a:active,
+  .NavigationItem a.active {
+    background: rgb(161, 140, 192);
+    background: linear-gradient(
+      0deg,
+      rgb(62, 29, 110) 0%,
+      rgba(62, 29, 110) 50%,
+      rgba(62, 29, 110) 70%,
+      rgba(161, 140, 192, 1) 100%
+    );
+    border-bottom: 4px solid #dfcefc;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: white;
+  }
+}

@@ -1,0 +1,29 @@
+.Footer {
+  width: 100%;
+  height: fit-content;
+  background-color: rebeccapurple;
+  text-align: center;
+}
+
+.Count {
+  height: 70%;
+  color: white;
+  font-family: "Solway", serif;
+}
+
+.Count_Text {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.Count_Number {
+  font-size: 5rem;
+  margin: 0;
+}
+
+.Copyright {
+  margin: 20px auto 0 auto;
+  padding: 20px 0;
+  width: 80%;
+  border-top: 3px dotted white;
+}

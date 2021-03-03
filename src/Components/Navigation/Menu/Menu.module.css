@@ -1,0 +1,12 @@
+.Menu {
+  background-color: white;
+  padding: 8px;
+  height: 45px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.Menu img {
+  height: 100%;
+}

@@ -1,0 +1,38 @@
+.Content {
+  margin-top: 10px;
+}
+
+.PizzaSet {
+  transition: all 0.2s;
+  animation-name: mobileSlide;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+}
+
+@media (min-width: 1000px) {
+  .PizzaSet {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation-name: desktopSlide;
+  }
+}
+
+@keyframes desktopSlide {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes mobileSlide {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,10 @@
+export const cola = "Cola";
+export const fanta = "Fanta";
+export const chocolate = "Chocolate";
+export const coffee = "Coffee";
+export const tea = "Tea";
+export const greenTea = "Green Tea";
+export const mineralWater = "Mineral Water";
+export const bananaMilkshake = "Banana Milkshake";
+export const chocolateMilkshake = "Chocolate Milkshake";
+export const strawberryMilkshake = "Strawberry Milkshake";

@@ -1,0 +1,95 @@
+.CheckoutSummary {
+  height: 250px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 0 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 7px 15px 8px;
+  font-family: cursive;
+  transition: all 0.2s;
+  animation-name: mobileSlide;
+  animation-duration: 0.1s;
+  animation-timing-function: ease-out;
+}
+
+.BurgerBox {
+  width: 150px;
+  height: 150px;
+  margin: 0;
+}
+
+.OrderTag {
+  margin: 0;
+}
+
+.UlandBurgerBox {
+  display: flex;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.Ulingredient {
+  list-style: none;
+  padding: 0;
+}
+
+.FirstList {
+  font-weight: bolder;
+}
+
+.TotalandDeleteBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Total {
+  margin: 0;
+  padding: 0;
+}
+
+.DeleteButton {
+  width: 150px;
+  color: white;
+  background-color: rgb(248, 72, 116);
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+@media (min-width: 800px) {
+  .CheckoutSummary {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .CheckoutSummary {
+    width: 85%;
+    box-shadow: none;
+    border-bottom: 3px solid black;
+    border-radius: unset;
+  }
+}
+
+@media (min-width: 1000px) {
+  .CheckoutSummary {
+    animation-name: desktopSlide;
+  }
+}
+
+@keyframes desktopSlide {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes mobileSlide {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

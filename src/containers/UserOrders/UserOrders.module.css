@@ -1,0 +1,68 @@
+.Checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.CheckoutSummaries {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.AddButton,
+.CheckoutButton,
+.EmptyOrderList_Button {
+  width: fit-content;
+  margin: 15px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: 5px solid rgb(122, 0, 0);
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 900;
+  font-family: cursive;
+  background-color: rgb(235, 102, 102);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.EmptyOrderList {
+  text-align: center;
+}
+.EmptyOrderList_Text {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: cursive;
+}
+.EmptyOrderList_Button {
+  margin: 100px auto;
+}
+
+.Link {
+  text-decoration: none;
+}
+
+.AddButton:hover,
+.CheckoutButton:hover,
+.EmptyOrderList_Button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+  .Checkout {
+    margin-top: 90px;
+  }
+}

@@ -1,0 +1,22 @@
+.Home {
+}
+
+.HowItWork {
+  width: 100%;
+  max-width: 1000px;
+  margin: 90px auto 0 auto;
+  background-color: white;
+  height: 300%;
+  border-top: 6px solid rebeccapurple;
+}
+
+.HowItWork_Title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: "Solway", serif;
+  padding-top: 30px;
+}
+
+.HowItWork_Picture_Desktop {
+  width: 100%;
+}

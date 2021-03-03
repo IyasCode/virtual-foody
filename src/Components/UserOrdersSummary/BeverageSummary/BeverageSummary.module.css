@@ -1,0 +1,100 @@
+.BeverageSummary {
+  height: 265px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 0 20px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+  margin: 0 7px 15px 8px;
+  font-family: cursive;
+  transition: all 0.2s;
+  animation-name: mobileSlide;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-out;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+}
+
+.Header_Tag {
+  margin: 0;
+  font-size: 1.9rem;
+  font-weight: 800;
+}
+
+.Header_Name {
+  margin: 0 10px;
+  font-weight: 900;
+}
+
+.BeverageImg {
+  width: 60%;
+  margin: auto;
+}
+
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Total {
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+
+.DeleteButton {
+  width: 130px;
+  color: white;
+  background-color: rgb(248, 72, 116);
+  cursor: pointer;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+@media (min-width: 800px) {
+  .BeverageSummary {
+    width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .BeverageSummary {
+    width: 85%;
+    box-shadow: none;
+    border-bottom: 3px solid black;
+    border-radius: unset;
+  }
+
+  .BeverageImg {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .BeverageSummary {
+    animation-name: desktopSlide;
+  }
+}
+
+@keyframes desktopSlide {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes mobileSlide {
+  0% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
